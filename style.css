@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+         user-select: none;
+}
+
+.background{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60') no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.background video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 100px 30px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 2);
+    backdrop-filter: blur(2px);
+}
+
+.container h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: blueviolet;
+    text-shadow: 0 0 10px rgba(3, 2, 2 , 0.8);
+}
+
+.develop{
+    width: 25px;
+    height: 25px; 
+    margin-bottom: -5px;
+}
+
+.door{
+    width: 25px;
+    height: 25px;
+    margin-bottom: -8px;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 85%;
+    height: 75%;
+    padding: 20px 45px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.input-box input::placeholder{
+    color: #dd3c9f;
+    opacity: 0.9;
+}
+
+.input-box input:focus{
+    outline: none;
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.forgot-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:-15px 0 10px;
+    margin-bottom: 20px;
+}
+
+
+.forgot-login label input{
+    margin-right: 5px;
+    accent-color: #dd3c9f;
+}
+
+.forgot-login a{
+    color: #dd3c9f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.forgot-login a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+    text-shadow: 0 0 10px rgba(3, 2, 2 , 1);
+}
+
+button{
+    width: 50%;
+    height: 40px;
+    margin-left: 25%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+button:hover{
+    background-color: blueviolet;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.75);
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+.register{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.register a{
+    color: #dd3c9f;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.register a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+    text-shadow: 0 0 10px rgba(3, 2, 2 , 1);
+}
+
+
+
+
+/*Estilização Responsiva*/
+@media (max-width: 600px) {
+    .container{
+        width: 70vw;
+    }
+
+    .container h1{
+        font-size: 28px;
+    }
+
+    .input-box input{
+        width: 90%;
+        margin-left: -5px;
+        padding: 15px;
+    }
+
+    button{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+.develop{
+    width: 25px;
+    height: 25px; 
+    margin-bottom: -7px;
+}
+
+.door{
+    width: 25px;
+    height: 25px;
+    margin-bottom: -9px;
+}
+}
