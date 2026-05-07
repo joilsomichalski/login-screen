@@ -19,8 +19,7 @@ O objetivo deste projeto é apresentar uma interface de autenticação moderna, 
 
 ## Tecnologias utilizadas
 
-- HTML5
-- CSS3
+**HTML5** | **CSS3**
 
 ## Conceitos praticados
 
